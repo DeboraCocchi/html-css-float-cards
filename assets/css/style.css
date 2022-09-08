@@ -4,6 +4,68 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Fredoka', sans-serif;
+}
+
 h1{
-  color:red;
+  color:#E53170;
+  font-weight: bolder;
+}
+
+.container{
+  margin: 0 auto;
+  width:80%;
+  border:1px dotted black;
+  text-align: center;
+}
+
+.row{
+  text-align: center;
+}
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+.team-cards .row::after{
+  clear:both;
+  content:' ';
+  display: table;
+}
+
+.col{
+  background-color: red;
+  height:100px;
+  width:300px;
+  display: inline-block;
+}
+
+.card-image{
+  display: inline-block;
+  background-color:yellow;
+  height:100px;
+  width:100px;
+  float:left;
+}
+
+.card-info{
+  float:right;
+  display: inline-block;
+  background-color:black;
+  height:100px;
+  width:200px;
+  text-align: left;
+  padding:5px;
+  color:white;
+}
+
+.card-info a{
+  text-decoration: none;
+  font-size:80%;
+  color:#34CCF2;
 }
