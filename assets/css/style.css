@@ -8,64 +8,108 @@ body{
   font-family: 'Fredoka', sans-serif;
 }
 
-h1{
-  color:#E53170;
-  font-weight: bolder;
-}
-
 .container{
   margin: 0 auto;
-  width:80%;
-  border:1px dotted black;
+  width:70%;
   text-align: center;
+  max-width:1200px;
+}
+
+.container>h1{
+  color:#E53170;
+  font-size: 40px;
+  font-weight: bolder;
+  padding:30px 20px 20px 20px;
+}
+
+.container>p{
+  padding: 20px 0;
 }
 
 .row{
   text-align: center;
+  padding:20px 0;
 }
 
-.left{
-  float:left;
-}
-
-.right{
-  float:right;
-}
-
-.team-cards .row::after{
+.team-cards .row::after, .row .col::after{
   clear:both;
   content:' ';
   display: table;
 }
 
+.row .left.col{
+  float:left;
+}
+
+.row .right.col{
+  float:right;
+}
+
+.row .col, .card-image, .card-info{
+  height:90px;
+}
+
 .col{
-  background-color: red;
-  height:100px;
-  width:300px;
+  background-color: rgb(208, 59, 206);
+  min-width:300px;
+  width:calc(100% / 3 - 30px);
   display: inline-block;
+  box-shadow: -10px -10px 10px lightgrey;
 }
 
 .card-image{
   display: inline-block;
   background-color:yellow;
-  height:100px;
-  width:100px;
+  width:90px;
   float:left;
+  background-size:cover;
 }
 
 .card-info{
   float:right;
   display: inline-block;
   background-color:black;
-  height:100px;
-  width:200px;
+  width:calc(100% - 90px);
   text-align: left;
-  padding:5px;
+  padding:15px;
   color:white;
 }
+.card-info>h4{
+  text-transform: uppercase;
+  font-size:1.1rem;
+}
 
-.card-info a{
+.card-info>span{
+  font-size:0.9rem;
+}
+
+.card-info>a{
+  font-size:0.8rem;
   text-decoration: none;
-  font-size:80%;
   color:#34CCF2;
 }
+
+#marcob{
+  background-image: url('../img/male1.png');
+}
+
+#laurar{
+  background-image: url('../img/female1.png');
+}
+
+#giorgiov{
+  background-image: url('../img/male2.png');
+}
+
+#martai{
+  background-image: url('../img/female2.png');
+}
+
+#robertol{
+  background-image: url('../img/male3.png');
+}
+
+#danielaa{
+  background-image: url('../img/female3.png');
+}
+
